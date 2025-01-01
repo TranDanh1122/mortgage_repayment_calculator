@@ -63,7 +63,8 @@ const Form = () => {
             return false
         }
         if (!isValid) return false
-
+        console.log(data.type);
+        
         caculator[data.type](data.amount, data.term, data.rate)
     }
     return (

@@ -38,7 +38,7 @@ const Input = ({ label, name, width, icon, iconPosition, isValid }) => {
                     )}>{icon}</span>
                     : ""
                 }
-                <input type="text" id={name} name={name}
+                <input type="text" id={name} name={name} 
                     className="w-full cursor-pointer text-3 py-3 px-4 outline-none border-none"
                     onMouseEnter={() => setStatus({ ...status, hover: true })}
                     onMouseLeave={() => setStatus({ ...status, hover: false })}
@@ -59,6 +59,6 @@ Input.propTypes = {
     width: PropTypes.string.isRequired,
     icon: PropTypes.string.isRequired,
     iconPosition: PropTypes.oneOf(["left", "right", "none"]).isRequired,
-    isValid: PropTypes.bool.isRequired
+    isValid: PropTypes.bool.isRequired,
 }
 export default Input
