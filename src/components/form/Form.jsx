@@ -68,7 +68,7 @@ const Form = () => {
         caculator[data.type](data.amount, data.term, data.rate)
     }
     return (
-        <form className="flex flex-row flex-wrap gap-4 p-10 bg-white justify-start w-[45%]" noValidate onSubmit={(e) => handleSubmit(e)}>
+        <form className="flex flex-row flex-wrap gap-4 p-10 bg-white justify-start w-[45%] mb:w-full" noValidate onSubmit={(e) => handleSubmit(e)}>
             <Input key="1" name="amount" label="Mortgage Amount" width={"100%"} icon={"$"} iconPosition={"left"} isValid={valid.amount} ></Input>
             <Input key="2" name="term" label="Mortgage Term" width={"50% - 8px"} icon={"year"} iconPosition={"right"} isValid={valid.term} ></Input >
             <Input key="3" name="rate" label="Interest Rate" width={"50% - 8px"} icon={"%"} iconPosition={"right"} isValid={valid.rate} ></Input >
